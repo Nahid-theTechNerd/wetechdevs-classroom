@@ -6,16 +6,19 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   width: 100%;
+  background-color: #f8faff;
   display: flex;
 }
 
 /* Global Tag Style */
 h1 {
-  font-size: 24px;
+  font-size: 36px;
 }
 h2 {
+  font-size: 24px;
 }
 h3 {
+  color: #6159e6;
 }
 a {
   text-decoration: none;
@@ -26,7 +29,9 @@ li {
 img {
   width: 100%;
 }
-
+p {
+  color: #abafc9;
+}
 /* Common Style */
 .primary__txt {
   color: #6159e6;
@@ -42,8 +47,11 @@ img {
 /* Menu Top Part*/
 .menu {
   height: 100%;
-  width: 240px;
+  width: 280px;
   background-color: #eef3ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .top__header {
   padding-top: 40px;
@@ -86,3 +94,131 @@ img {
   border-left: 5px solid #6159e6;
   color: #6159e6;
 }
+.msg__count {
+  padding: 5px 15px;
+  margin-left: 20px;
+  color: white;
+  background-color: #f96879;
+  border-radius: 20px;
+}
+/* Menu Teacher Profile Part */
+.teacher__profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.show__profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profile__pic__border {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #6159e6;
+  margin-right: 10px;
+}
+.profile_pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #eef3ff;
+}
+.logout {
+  background-color: white;
+  padding: 10px 30px;
+  color: #abafc9;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.logout i {
+  padding-right: 10px;
+}
+/* Menu End */
+
+/*body part*/
+.body__header {
+  display: flex;
+  align-self: center;
+  color: #222222;
+}
+.body__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #6159e6;
+}
+.search {
+  background-color: #eef3ff;
+  padding-left: 10px;
+  height: 36px;
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.search > input {
+  background-color: #eef3ff;
+  height: 100%;
+  width: 100%;
+  padding: 0 5px;
+  outline: none;
+  border: 0;
+}
+.notification {
+  height: 36px;
+  width: 36px;
+  background-color: #eef3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+/* Layout for PC View*/
+.body__part__container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+.body__part {
+  background-color: #f8faff;
+  padding: 10px;
+}
+.body__header {
+  grid-column: 1/4;
+}
+.body__search {
+  grid-column: 4;
+}
+.body__incoming__lesson {
+  grid-column: 1/3;
+  grid-row: 2/5;
+}
+.body__materials {
+  grid-column: 1/3;
+  grid-row: 5/8;
+}
+.body_groups {
+  grid-column: 3;
+  grid-row: 2/8;
+}
+.body__semester__progress {
+  grid-column: 4;
+  grid-row: 2/4;
+}
+.body__inbox {
+  grid-column: 4;
+  grid-row: 4/8;
+}
+/* Layout for PC View End*/
