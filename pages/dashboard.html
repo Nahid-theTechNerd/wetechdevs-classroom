@@ -89,6 +89,7 @@
         </div>
         <div class="notification">
           <i class="fa-solid fa-bell"></i>
+          <div class="notification__badge"></div>
         </div>
       </div>
       <div class="body__part body__incoming__lesson">
@@ -96,11 +97,11 @@
           <h3 class="class_title">Incomming Lesson</h3>
           <div class="incomming_lesson_buttons">
             <a class="button__link" href="#">Show all</a>
-            <a class="button__link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <button class="button__link"><i class="fa-solid fa-ellipsis-vertical"></i></button>
           </div>
         </div>
         <h4 class="day">Monday</h4>
-        <div class="incomming__lesson">
+        <a href="#"><div class="incomming__lesson">
           <div class="lesson__details">
             <div class="icon"><i class="fa-solid fa-calendar-plus"></i></div>
             <div class="schedule">
@@ -111,8 +112,21 @@
           <h4 class="lesson upcoming"><i class="fa-solid fa-circle fa-2xs"></i>&nbsp Lesson 30</h4>
           <p class="media">Online Classes <span class="primary__txt">Zoom</span></p>
           <i class="fa-solid fa-angle-right"></i>
-        </div>
-        <div class="incomming__lesson">
+        </div></a>
+        <a href="#"><div class="incomming__lesson">
+          <div class="lesson__details">
+            <div class="icon"><i class="fa-solid fa-calendar-plus"></i></div>
+            <div class="schedule">
+              <h4 class="time">2:00 PM - 3:30PM</h4>
+              <p class="course">React - 6th Batch</p>
+            </div>
+          </div>
+          <h4 class="lesson"><i class="fa-solid fa-circle fa-2xs"></i>&nbsp Lesson 30</h4>
+          <p class="media">Online Classes <span class="primary__txt">Zoom</span></p>
+          <i class="fa-solid fa-angle-right"></i>
+        </div></a>
+        <h4 class="day">Tuesday</h4>
+        <a href="#"><div class="incomming__lesson">
           <div class="lesson__details">
             <div class="icon"><i class="fa-solid fa-calendar-plus"></i></div>
             <div class="schedule">
@@ -124,20 +138,7 @@
           <p class="media">Online Classes <span class="primary__txt">Zoom</span></p>
           <i class="fa-solid fa-angle-right"></i>
         </div>
-        <h4 class="day">Tuesday</h4>
-        <div class="incomming__lesson">
-          <div class="lesson__details">
-            <div class="icon"><i class="fa-solid fa-calendar-plus"></i></div>
-            <div class="schedule">
-              <h4 class="time">2:00 PM - 3:30PM</h4>
-              <p class="course">React - 6th Batch</p>
-            </div>
-          </div>
-          <h4 class="lesson upcoming"><i class="fa-solid fa-circle fa-2xs"></i>&nbsp Lesson 30</h4>
-          <p class="media">Online Classes <span class="primary__txt">Zoom</span></p>
-          <i class="fa-solid fa-angle-right"></i>
-        </div>
-      </div>
+      </div></a>
       <div class="body__part body__materials">
         <h3>Materials</h3>
         <div class="card__container">
@@ -157,9 +158,203 @@
             <img src="../assets/images/card-3.svg" alt=""></div>
         </div>
       </div>
-      <div class="body__part body_groups">5</div>
-      <div class="body__part body__semester__progress">6</div>
-      <div class="body__part body__inbox">7</div> 
+      <div class="body__part body__groups">
+        <div class="body__groups__header">
+          <h3>Groups</h3>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="group__container">
+          <!-- Single Group  -->
+          <div class="group">
+            <div class="group__image"><img src="../assets/images/group-cover.jpg" alt=""></div>
+            <div class="group__info__click">
+              <div class="group__info">
+                <h3>4.2 Flex Box</h3>
+                <p class="group__student__count">No of Student 8</p>
+              </div>
+              <i class="fa-solid fa-angle-down group__right__arow"></i>
+            </div>
+          </div>
+          <!-- Single Group End  -->
+          <div class="group__full__box group__clicked">
+            <div class="group">
+              <div class="group__image"><img src="../assets/images/group-cover.jpg" alt=""></div>
+              <div class="group__info__click">
+                <div class="group__info">
+                  <h3>4.2 Flex Box</h3>
+                  <p class="group__student__count">No of Student 8</p>
+                </div>
+                <i class="fa-solid fa-angle-up group__right__arow"></i>
+              </div>
+            </div> 
+            <a class="group__properties" href="#">
+              <i class="fa-solid fa-paper-plane"></i>
+              <b>Send Message</b>
+              </a>
+            <a class="group__properties" href="#">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <b>Reschedule Lesson</b>
+            </a>
+            <a class="group__properties" href="#">
+              <i class="fa-solid fa-share-nodes"></i>
+              <b>Share materials</b>
+            </a>
+          </div>
+          <div class="group">
+            <div class="group__image"><img src="../assets/images/group-cover.jpg" alt=""></div>
+            <div class="group__info__click">
+              <div class="group__info">
+                <h3>4.2 Flex Box</h3>
+                <p class="group__student__count">No of Student 8</p>
+              </div>
+              <i class="fa-solid fa-angle-down group__right__arow"></i>
+            </div>
+          </div>
+          <div class="group">
+            <div class="group__image"><img src="../assets/images/group-cover.jpg" alt=""></div>
+            <div class="group__info__click">
+              <div class="group__info">
+                <h3>4.2 Flex Box</h3>
+                <p class="group__student__count">No of Student 8</p>
+              </div>
+              <i class="fa-solid fa-angle-down group__right__arow"></i>
+            </div>
+          </div>
+          <div class="new__group">
+            <button class="create__new__group">
+              <i class="fa-solid fa-plus"></i>
+              Create New Group
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="body__part body__semester__progress">
+        <div class="body__groups__header">
+          <h3>Semester progress</h3>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="process__container">
+          <div class="semester_progress">
+            <div class="progress purple__bg">
+              <div class="process__icon ">
+                <!-- Icon  -->
+                <i class="fa-solid fa-circle-notch"></i>
+              </div>
+              <div class="details">
+                  <p>Lesson Progrss</p>
+                  <p class="score">29 <span class="opacity-50">/ 30</span></p>
+                </div>
+            </div>
+          </div>
+          <div class="exam__schedule">
+            <div class="progress">
+              <div class="process__icon ">
+                <!-- Icon  -->
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <div class="details">
+                  <p>Semester Exam in</p>
+                  <p class="score">7 days</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body__part body__inbox">
+        <div class="body__groups__header">
+          <h3>Inbox</h3>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="inbox__container">
+          <!-- Single Chat  -->
+          <div class="single__chat">
+            <div class="chat">
+              <div class="chat__wrapper">
+                <div class="upper__part">
+                  <div class="chat__image"><img src="../assets/images/nahid.jpeg" alt=""></div>
+                  <div class="user">
+                    <div class="name__time">
+                      <p class="user__name">Redwanul Haque</p>
+                      <p class="time">2:30</p>
+                    </div>
+                    <p class="status ">Offline</p>
+                  </div>
+                </div>
+                <div class="lower__part">
+                  <p class="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, laboriosam.</p>
+                </div>
+              </div>
+              <div class="dot"></div>
+              <div class="reply">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>Reply</p>
+              </div>
+              <div class="remove__chat">
+                <i class="fa-solid fa-trash-can"></i>
+                <p>Remove</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Chat End  -->
+          <div class="single__chat">
+            <div class="chat read">
+              <div class="chat__wrapper">
+                <div class="upper__part">
+                  <div class="chat__image"><img src="../assets/images/nahid.jpeg" alt=""></div>
+                  <div class="user">
+                    <div class="name__time">
+                      <p class="user__name">Redwanul Haque</p>
+                      <p class="time">2:30</p>
+                    </div>
+                    <p class="status online">Online</p>
+                  </div>
+                </div>
+                <div class="lower__part">
+                  <p class="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, laboriosam.</p>
+                </div>
+              </div>
+              <div class="dot"></div>
+              <div class="reply">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>Reply</p>
+              </div>
+              <div class="remove__chat">
+                <i class="fa-solid fa-trash-can"></i>
+                <p>Remove</p>
+              </div>
+            </div>
+          </div>
+          <div class="single__chat">
+            <div class="chat read">
+              <div class="chat__wrapper">
+                <div class="upper__part">
+                  <div class="chat__image"><img src="../assets/images/nahid.jpeg" alt=""></div>
+                  <div class="user">
+                    <div class="name__time">
+                      <p class="user__name">Redwanul Haque</p>
+                      <p class="time">2:30</p>
+                    </div>
+                    <p class="status online">Online</p>
+                  </div>
+                </div>
+                <div class="lower__part">
+                  <p class="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, laboriosam.</p>
+                </div>
+              </div>
+              <div class="dot"></div>
+              <div class="reply">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>Reply</p>
+              </div>
+              <div class="remove__chat">
+                <i class="fa-solid fa-trash-can"></i>
+                <p>Remove</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
     </div>
+    
   </body>
 </html>
